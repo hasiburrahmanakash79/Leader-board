@@ -19,7 +19,9 @@ main{
 hr{
     border: 1px solid #D1D1D1;
 }
-
+/* --------------- 
+top player styles
+---------------- */
 .title{
     color: #562eff;
     margin-top: 2px;
@@ -42,8 +44,13 @@ hr{
     width: 50px;
     height: 50px;
 }
+/* --------------- 
+top player styles
+---------------- */
 
-
+/* --------------- 
+top blogs styles
+---------------- */
 .blogs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -73,8 +80,13 @@ hr{
     text-decoration: none;
     color: #562EFF;
 }
+/* --------------- 
+top blogs styles
+---------------- */
 
- 
+/* ------------
+courses styles
+------------ */ 
 .courses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -111,10 +123,14 @@ hr{
     padding: 10px;
     color: #ED6B4F;
 }
+/* --------------- 
+courses styles
+---------------- */
 
 
-
-
+/* --------
+Responsive
+-------- */
 @media screen and (max-width:576px) {
     .container{
         width: 100%;  
@@ -123,7 +139,14 @@ hr{
         grid-template-columns: repeat(1, 1fr);
         justify-items:  center;
     }
-    .blogs{
+    .player{
+        flex-direction: column;
+        align-items: center;
+    }
+    hr{
+        width: 100%;
+    }
+    .blog{
         display: flex;
         flex-direction: column;
     }
